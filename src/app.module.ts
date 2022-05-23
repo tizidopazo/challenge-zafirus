@@ -7,17 +7,17 @@ import { EmployeeModule } from './models/employee/employee.module';
 import { Certificate } from './models/employee/entity/certificate.entity';
 import { Work_experience } from './models/employee/entity/work_experience.entity';
 import { Links } from './models/employee/entity/link.entity';
-
+const puerto: any = process.env.PORT || 3306;
 @Module({
   imports: [
     EmployeeModule,
     TypeOrmModule.forRoot({
       type: 'mysql',
-      host: 'localhost',
-      port: 3306,
-      username: 'root',
-      password: 'secure_pass_here',
-      database: 'challenge',
+      host: 'us-cdbr-east-05.cleardb.net',
+      port: puerto,
+      username: 'b66d61183d1443',
+      password: 'f87e8093',
+      database: 'heroku_25dd573371a9de9',
       entities: [Employee, Certificate, Work_experience, Links],
       synchronize: true,
     }),
