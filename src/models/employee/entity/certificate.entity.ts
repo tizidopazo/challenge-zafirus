@@ -1,5 +1,6 @@
 import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
 import { Employee } from './employee.entity';
+
 @Entity('certificate')
 export class Certificate {
   @PrimaryGeneratedColumn({
