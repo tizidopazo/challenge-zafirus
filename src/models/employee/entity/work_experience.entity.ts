@@ -6,7 +6,7 @@ import {
   PrimaryGeneratedColumn,
 } from 'typeorm';
 import { Employee } from './employee.entity';
-@Entity('Work_experience')
+@Entity('work_experience')
 export class Work_experience {
   @PrimaryGeneratedColumn({
     name: 'id',

@@ -2,7 +2,7 @@ import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 import { Certificate } from './certificate.entity';
 import { Links } from './link.entity';
 import { Work_experience } from './work_experience.entity';
-@Entity('Employee')
+@Entity('employee')
 export class Employee {
   @PrimaryGeneratedColumn({
     name: 'id',
