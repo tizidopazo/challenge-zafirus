@@ -15,6 +15,7 @@ import { Links } from './models/employee/entity/link.entity';
       type: 'mysql',
       host: 'us-cdbr-east-05.cleardb.net',
       username: 'b66d61183d1443',
+      port: 3306,
       password: 'f87e8093',
       database: 'heroku_25dd573371a9de9',
       entities: [Employee, Certificate, Work_experience, Links],
